@@ -28,6 +28,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    
     window.addEventListener("scroll", revealSections);
     revealSections(); // Run on page load
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".hidden");
+
+    function fadeInOnScroll() {
+        elements.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.85 && rect.bottom > 0) {
+                el.classList.add("show");
+            } else {
+                el.classList.remove("show"); // Removes class when out of view
+            }
+        });
+    }
+
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll(); // Trigger on load in case elements are already in view
 });
