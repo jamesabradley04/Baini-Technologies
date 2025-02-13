@@ -2,6 +2,4 @@
 
 ## info
 
-webpage folder contains css html java files and all images to display the webpage.
-
-clone the repo to computer and paste path to home.html into web browser to display page.
+Download or clone entire webpage folder to computer. Copy the location, or path, of home.HTML into browser to display preview of site.
