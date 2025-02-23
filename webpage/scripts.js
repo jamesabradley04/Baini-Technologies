@@ -51,3 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", fadeInOnScroll);
     fadeInOnScroll(); // Trigger on load in case elements are already in view
 });
+
+
+window.addEventListener("scroll", function() {
+    const hero = document.getElementById("hero")
+    var scrollPosition = window.scrollY;
+    var translateY = window.scrollY * -0.05;
+    hero.style.transform = `translateY(${translateY}%)`;
+});
