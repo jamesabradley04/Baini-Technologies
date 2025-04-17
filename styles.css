@@ -104,7 +104,7 @@ section.active {
 .hero h1 {
     font-size: 42px;
     margin-bottom: 10px;
-    color: #c6bfa3
+    color: #c6bfa3;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -202,6 +202,14 @@ section:nth-child(even) {
     max-width: 600px; /* Keeps text readable */
 }
 
+.contact-text {
+    flex: 1; /* Allows text to take available space */
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px; /* Keeps text readable */
+    
+}
+
 .mission-text {
     font-size: 24px;
     color: #800024;
@@ -233,6 +241,7 @@ section:nth-child(even) {
     justify-content: center; /* Centers content vertically */
     height: 200px; /* Adjust height as needed */
 }
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
