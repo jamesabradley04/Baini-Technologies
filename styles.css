@@ -92,7 +92,7 @@ section.active {
 .hero {
     background: linear-gradient(to right, #800017, #e4a2b1);
     color: #c6bfa3;
-    padding: 150px 20px;
+    padding: 150px;
     align-items: center;
     /*background-image: url("parts_banner.png");
     background-size: 1500px;
@@ -186,7 +186,7 @@ section:nth-child(even) {
     justify-content: center; /* Centers them horizontally */
     gap: 40px; /* Space between image and text */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    margin-bottom: 40px; /* Space below the first container */
+    margin-bottom: 20px; /* Space below the first container */
 }
 
 .hemosave-image {
